@@ -359,7 +359,7 @@ Backbone.Validation.validators = (function(patterns, messages, _) {
                 return format(messages.pattern, attr, pattern);
             }
         },
-        validation: function(value, attr, objectValue) {
+        object: function(value, attr, objectValue) {
             if (!_.isObject(value)) {
                 return format(messages.object, attr);
             }
